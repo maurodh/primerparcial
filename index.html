@@ -17,6 +17,8 @@
 
 <p> <dt> Git no modela ni almacena sus datos de este modo. En cambio, Git modela sus datos más como </dt> <dt> un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el</dt> <dt> estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese </dt> <dt> momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han </dt> <dt> modificado, Git no almacena el archivo de nuevo, s&oacute;lo un enlace al archivo anterior idéntico que ya tiene </dt> <dt> almacenado. Git modela sus datos más como en la Figura 1-5. </p>
 
+<img src="imagenes/imagen2.png" >
+
 <p> <dt> Figura 1-5. Git almacena la informaci&oacute;n como instantáneas del proyecto a lo largo del tiempo. </dt> <p>
 
 <p> <dt> Esta es una distinci&oacute;n importante entre Git y prácticamente todos los demás VCSs. Hace que Git </dt> <dt> reconsidere casi todos los aspectos del control de versiones que muchos de los demás sistemas copiaron </dt> <dt> de la generaci&oacute;n anterior. Esto hace que Git se parezca más a un mini sistema de archivos con algunas </dt> <dt> herramientas tremendamente potentes construidas sobre él, que a un VCS. Exploraremos algunos de los </dt> <dt> beneficios que obtienes al modelar tus datos de esta manera cuando veamos ramificaciones (branching)</dt> <dt> en Git en el Cap&iacute;tulo 3.</dt> <p>
@@ -50,6 +52,7 @@
 <p> <dt> Ahora presta atenci&oacute;n. Esto es lo más importante a recordar acerca de Git si quieres que el resto de tu</dt> <dt>proceso de aprendizaje prosiga sin problemas. Git tiene tres estados principales en los que se pueden</dt><dt> encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged).</dt><dt> Confirmado significa que los datos están almacenados de manera segura en tu base de datos local.</dt><dt> Modificado significa que has modificado el archivo pero todav&iacute;a no lo has confirmado a tu base de datos.</dt><dt> Preparado significa que has marcado un archivo modificado en su versi&oacute;n actual para que vaya en tu</dt><dt> pr&oacute;xima confirmaci&oacute;n.</dt></p>
 
 <p><dt>Esto nos lleva a las tres secciones principales de un proyecto de Git: el directorio de Git (Git directory), el</dt><dt> directorio de trabajo (working directory), y el área de preparaci&oacute;n (staging area).</dt></p>
+<img src="imagenes/imagen3.png" >
 
 <p><dt> Figura 1-6. Directorio de trabajo, área de preparaci&oacute;n y directorio de Git.</dt></p>
 
